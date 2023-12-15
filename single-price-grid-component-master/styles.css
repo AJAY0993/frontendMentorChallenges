@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --text-color-secondary: hsl(218, 22%, 67%);
+    --text-color-primary: white;
+
+}
+
+/* .container {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 100%;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #E5EFF5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    padding: 1em 2.5em;
+    background-color: var(--Bright-Yellow);
+    border: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: .5em;
+    overflow: hidden;
+    margin: 0 .5em;
+}
+
+.main-title {
+    margin: 1em 0;
+    font-weight: 700;
+    color: var(--Cyan);
+}
+
+.sub-title {
+    max-width: 500px;
+    margin: 1em 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+p {
+    color: var(--text-color-secondary);
+}
+
+li {
+    font-size: .9em;
+}
+
+.container>* {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: min(2rem, 9vw);
+}
+
+.container>*:first-child {
+    flex-basis: 100%;
+}
+
+.hero {
+    background-color: white;
+}
+
+.hero .sub-title {
+    color: var(--Bright-Yellow);
+}
+
+.intro-text {
+    max-width: 45em;
+}
+
+.select-plan {
+    background-color: #2BB4B1;
+}
+
+.value {
+    font-size: 2rem;
+    color: var(--text-color-primary);
+}
+
+.plan {
+    color: var(--Light-Gray);
+}
+
+.key-benefit {
+    color: var(--Light-Gray);
+    margin: 1em 0;
+}
+
+.feature-highlights {
+    background-color: #49BEBD;
+    color: white;
+}
+
+.feature-highlights ul {
+    color: var(--Light-Gray);
+}
+
+.sign-up {
+    width: 100%;
+    display: block;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 8px;
+    -webkit-box-shadow: 3px 5px 58px -16px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 3px 5px 58px -16px rgba(0, 0, 0, 0.42);
+    box-shadow: 3px 5px 58px -16px rgba(0, 0, 0, 0.42);
+}
