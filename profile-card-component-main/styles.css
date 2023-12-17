@@ -1,0 +1,119 @@
+*,
+*::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --Font-weight-regular: 400;
+    --Font-weight-bold: 700;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 18px;
+    background: var(--Dark-cyan);
+    padding: 0 1em;
+    overflow: hidden;
+    position: relative;
+}
+
+body::after {
+    content: url('images/bg-pattern-top.svg');
+    position: absolute;
+    top: -50%;
+    transform: rotate(348deg);
+    right: 556px;
+    overflow: hidden;
+}
+
+body::before {
+    content: url('images/bg-pattern-bottom.svg');
+    position: absolute;
+    top: 290px;
+    transform: rotate(326deg);
+    right: -378px;
+    overflow: hidden;
+}
+
+.gray-text {
+    color: var(--Dark-gray);
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: var(--Font-weight-bold);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    overflow: hidden;
+    background: white;
+    z-index: 100;
+}
+
+.card-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__profile-image {
+    border: 6px solid white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    margin-bottom: -2em;
+}
+
+@media (max-width:400px) {
+    .card__profile-image {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+.card__user {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.card__name {
+    margin-bottom: .3em;
+}
+
+.card__name span {
+    font-weight: var(--Font-weight-regular);
+    margin-left: .4em;
+}
+
+.card__location {
+    font-size: 14px;
+}
+
+.card__stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 1.5em 0;
+    border-top: 1px solid var(--Dark-gray);
+    text-align: center;
+}
+
+.card__stats-item span {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
