@@ -9,9 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     toggle.addEventListener("click", () => {
       console.log("click")
-      answer.classList.toggle("hide")
-      openIcon.classList.toggle("hide")
-      closeIcon.classList.toggle("hide")
+      if (answer.classList.contains("hide")) {
+        answer.classList.remove("hide")
+        openIcon.classList.add("hide")
+        closeIcon.classList.remove("hide")
+      } else {
+        answer.classList.add("hide")
+        openIcon.classList.remove("hide")
+        closeIcon.classList.add("hide")
+      }
     })
   })
 })
