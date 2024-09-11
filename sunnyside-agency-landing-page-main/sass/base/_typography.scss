@@ -1,6 +1,6 @@
 .heading-primary {
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: 900;
   font-family: $font-secondary;
   color: $white;
   text-transform: uppercase;
@@ -8,12 +8,14 @@
 }
 .heading-secondary {
   font-size: 3rem;
+  font-weight: 900;
   color: $very-dark-desaturated-blue;
   font-family: $font-secondary;
 }
 
 .heading-tertiary {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  font-weight: 900;
   color: $very-dark-desaturated-blue;
   font-family: $font-secondary;
 }

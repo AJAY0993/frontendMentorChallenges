@@ -16,7 +16,7 @@ body {
 
 .heading-primary {
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: 900;
   font-family: "Fraunces";
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
@@ -25,12 +25,14 @@ body {
 
 .heading-secondary {
   font-size: 3rem;
+  font-weight: 900;
   color: hsl(212, 27%, 19%);
   font-family: "Fraunces";
 }
 
 .heading-tertiary {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  font-weight: 900;
   color: hsl(212, 27%, 19%);
   font-family: "Fraunces";
 }
@@ -105,6 +107,14 @@ body {
 
 .u-gap--l {
   gap: 3rem;
+}
+
+.u-gap--xl {
+  gap: 4rem;
+}
+
+.u-gap--3xl {
+  gap: 5rem;
 }
 
 .u-text-left {
@@ -381,8 +391,8 @@ body {
   }
 }
 footer {
-  background-color: hsl(168, 34%, 41%);
-  padding: 4rem 0;
+  background-color: #90d4c6;
+  padding: 10rem 0;
   color: hsl(167, 40%, 24%);
 }
 footer a {
@@ -407,7 +417,8 @@ footer ul {
 }
 
 .section-testimonials {
-  padding: 9rem 0;
+  padding: 15rem 0;
+  background-color: #fffbf7;
 }
 
 /*# sourceMappingURL=style.css.map */
