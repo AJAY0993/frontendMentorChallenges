@@ -1,0 +1,60 @@
+.nav {
+  display: flex;
+  overflow: visible;
+  .nav__list {
+    list-style: none;
+    color: $white;
+    font-family: $font-primary;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 50rem) {
+  .nav {
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    padding: 0 10rem;
+    background-color: $white;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden; // Initially hidden
+
+    &.open {
+      transform: translateX(-50%) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &.close {
+      transform: translateX(-50%) scale(0);
+      opacity: 0;
+    }
+
+    .nav__list {
+      padding: 2rem 0;
+      margin: 0 auto;
+      flex-direction: column;
+      font-weight: 600;
+      color: $very-dark-grayish-blue;
+
+      button {
+        background-color: $yellow;
+        padding: 1.6rem 1.8rem;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: 20px solid white; /* Creates the triangle */
+      border-left: 20px solid transparent; /* Makes the right angle transparent */
+      rotate: 90deg;
+    }
+  }
+}

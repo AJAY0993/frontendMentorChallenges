@@ -1,0 +1,23 @@
+.testimonial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: $font-primary;
+  font-weight: 500;
+  color: $very-dark-grayish-blue;
+  max-width: 36ch;
+  &__author--image {
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+  }
+  &__author--name {
+    color: $very-dark-desaturated-blue;
+    font-family: $font-secondary;
+    font-weight: 700;
+  }
+  &__author--title {
+    font-size: 1.6rem;
+  }
+}

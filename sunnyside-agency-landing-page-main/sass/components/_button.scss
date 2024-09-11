@@ -1,0 +1,45 @@
+.btn__text {
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: $font-base-size;
+  color: $very-dark-desaturated-blue;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+
+  &--yellow::after {
+    @include btn-border;
+    background-color: rgba($yellow, 0.4);
+  }
+  &--pink::after {
+    @include btn-border;
+    background-color: rgba($soft-red, 0.4);
+  }
+
+  &--yellow:active::after {
+    background-color: $yellow;
+  }
+  &--pink:active::after {
+    background-color: $soft-red;
+  }
+}
+
+.btn__fill {
+  font-family: $font-secondary;
+  color: $very-dark-desaturated-blue;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  border-radius: 2.5rem;
+  text-transform: uppercase;
+  position: relative;
+  border: 0;
+  padding: 1.2rem 1.4rem;
+  cursor: pointer;
+
+  &:active {
+    background-color: rgba($white, 0.3);
+    color: $white;
+  }
+}

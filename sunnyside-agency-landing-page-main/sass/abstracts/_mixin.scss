@@ -1,0 +1,24 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin btn-border {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 110%;
+  left: -5%;
+  height: 0.9rem;
+  border-radius: 0.4rem;
+  z-index: -1;
+}

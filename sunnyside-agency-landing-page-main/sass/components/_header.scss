@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  height: 6rem;
+  margin-bottom: -6rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  .hamburger {
+    display: none;
+  }
+  @media (max-width: 500px) {
+    .hamburger {
+      display: block !important;
+    }
+  }
+}

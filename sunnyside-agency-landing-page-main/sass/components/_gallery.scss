@@ -1,0 +1,19 @@
+.gallery {
+  &__image {
+    flex: 1 1 25%;
+    height: auto;
+    object-fit: cover;
+    box-sizing: border-box;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 50rem) {
+  .gallery__image {
+    flex: 1 1 50%;
+  }
+}

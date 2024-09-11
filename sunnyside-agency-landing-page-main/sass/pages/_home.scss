@@ -1,0 +1,9 @@
+.b1,
+.b4 {
+  @include flex-center;
+  flex-direction: column;
+}
+
+.section-testimonials {
+  padding: 9rem 0;
+}

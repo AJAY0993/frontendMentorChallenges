@@ -1,0 +1,36 @@
+.heading-primary {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: $font-secondary;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.heading-secondary {
+  font-size: 3rem;
+  color: $very-dark-desaturated-blue;
+  font-family: $font-secondary;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  color: $very-dark-desaturated-blue;
+  font-family: $font-secondary;
+}
+
+.heading-quaternary {
+  font-size: 2.2rem;
+  color: $grayish-blue;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $grayish-blue;
+  font-family: $font-secondary;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  font-family: $font-primary;
+  font-weight: 600;
+  color: $grayish-blue;
+  max-width: 45ch;
+}

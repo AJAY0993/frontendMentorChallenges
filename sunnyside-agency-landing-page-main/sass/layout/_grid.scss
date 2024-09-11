@@ -1,0 +1,26 @@
+.row {
+  max-width: 144rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  .col-1-of-2 {
+    width: 50%;
+    height: auto;
+  }
+
+  @media (max-width: 400px) {
+    .col-1-of-2 {
+      width: 100%;
+      height: auto;
+    }
+    .feature__image--2 {
+      order: 5;
+    }
+  }
+
+  .col img {
+    height: 100%;
+    max-width: 100%;
+  }
+}

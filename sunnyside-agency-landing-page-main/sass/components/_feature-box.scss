@@ -1,0 +1,12 @@
+.feature__feature-box--bottom-wrapper {
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .feature__feature-box--bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
